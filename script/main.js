@@ -1,18 +1,19 @@
 // Function to check window size and set the navbar display
-function checkWindowSize() {
-  const navbar = document.getElementById("navbar");
-  if (window.innerWidth > 768) {
-    navbar.style.display = "none"; // Hide navbar if screen width is greater than 768px
-  } else {
-    navbar.style.display = "block"; // Show navbar if screen width is 768px or less
-  }
-}
+console.log("hello");
+// function checkWindowSize() {
+//   const navbar = document.querySelector(".navbar");
+//   console.log(navbar)
+//   if (window.innerWidth > 768) {
+//     navbar.style.display = "none"; // Hide navbar if screen width is greater than 768px
+//   } else {
+//     navbar.style.display = "block"; // Show navbar if screen width is 768px or less
+//   }
+// }
 
 // Call the function initially
-checkWindowSize();
 
 // Add event listener for window resize
-window.addEventListener("resize", checkWindowSize);
+// window.addEventListener("resize", checkWindowSize);
 
 // Function to toggle the navbar
 function toggleNavbar() {
@@ -25,9 +26,9 @@ function toggleNavbar() {
 }
 
 // Add event listener for the menu icon click
-let menuIcon = document.querySelector("#menu-icon");
-menuIcon.addEventListener("click", () => {
-  menuIcon.classList.toggle("fa-times"); // Toggle the icon
+let menuIcoAgain = document.querySelector("#menu-icon");
+menuIcoAgain.addEventListener("click", () => {
+  menuIcoAgain.classList.toggle("fa-times"); // Toggle the icon
   toggleNavbar(); // Toggle the navbar display
 });
 
@@ -102,9 +103,8 @@ window.onscroll = () => {
 document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed(".multiple-text", {
     strings: [
-      "Web Developer",
+      "FullStack Developer",
       "Frontend Developer",
-      "Youtuber",
       "Backend Developer",
       "Database Creator",
     ],
