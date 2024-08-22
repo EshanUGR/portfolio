@@ -18,7 +18,7 @@ console.log("hello");
 // Function to toggle the navbar
 function toggleNavbar() {
   const navbar = document.getElementById("navbar");
-  if (navbar.style.display === "none" || navbar.style.display === "") {
+  if (navbar.style.display === "none") {
     navbar.style.display = "block";
   } else {
     navbar.style.display = "none";
