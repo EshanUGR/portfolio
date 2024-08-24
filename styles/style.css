@@ -534,6 +534,18 @@ span {
     margin: 2rem 0;
   }
 
+  .navbar {
+  display: none; /* Initially hidden on mobile */
+}
+
+/* Show navbar on larger screens */
+@media (min-width: 768px) {
+  .navbar {
+    display: block;
+  }
+}
+
+
   .home {
     flex-direction: column;
   }

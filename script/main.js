@@ -16,21 +16,37 @@ console.log("hello");
 // window.addEventListener("resize", checkWindowSize);
 
 // Function to toggle the navbar
-function toggleNavbar() {
-  const navbar = document.getElementById("navbar");
-  if (navbar.style.display === "none") {
-    navbar.style.display = "block";
-  } else {
-    navbar.style.display = "none";
-  }
-}
+document.addEventListener("DOMContentLoaded", function () {
+  // Function to toggle the navbar display
+  function toggleNavbar() {
+    const navbar = document.querySelector(".navbar"); // Select the navbar by class
 
-// Add event listener for the menu icon click
-let menuIcoAgain = document.querySelector("#menu-icon");
-menuIcoAgain.addEventListener("click", () => {
-  menuIcoAgain.classList.toggle("fa-times"); // Toggle the icon
-  toggleNavbar(); // Toggle the navbar display
+    if (!navbar) {
+      console.error("Navbar element not found");
+      return;
+    }
+
+    if (navbar.style.display === "none" || navbar.style.display === "") {
+      navbar.style.display = "block";
+    } else {
+      navbar.style.display = "none";
+    }
+  }
+
+  // Add event listener for the menu icon click
+  let menuIcon = document.querySelector("#menu-icon"); // Select the menu icon by ID
+  if (menuIcon) {
+    menuIcon.addEventListener("click", () => {
+      menuIcon.classList.toggle("fa-times"); // Toggle the icon between fa-bars and fa-times
+      toggleNavbar(); // Toggle the navbar display
+    });
+  } else {
+    console.error("Menu icon element not found");
+  }
 });
+
+
+
 
 // Validate form
 function validateForm() {
