@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Frontend Developer",
       "Backend Developer",
       "Database Creator",
+      "MernStack Developer"
     ],
     typeSpeed: 100,
     backSpeed: 100,
