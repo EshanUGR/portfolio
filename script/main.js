@@ -122,8 +122,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "FullStack Developer",
       "Frontend Developer",
       "Backend Developer",
-      "Database Creator",
-      "MernStack Developer"
+      "MernStack Developer",
+      
+      
     ],
     typeSpeed: 100,
     backSpeed: 100,
